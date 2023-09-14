@@ -1,5 +1,8 @@
 import { useState } from "react"
 
+import { POSTtarea } from "./LLAMADAS_API";
+
+
 export default function Create() {
     const [nombre, setNombre] = useState("");
 
@@ -8,7 +11,7 @@ export default function Create() {
     }
 
     function handleOnClick(e) {
-        
+        POSTtarea(nombre, "", 1);
     }
 
     return (
