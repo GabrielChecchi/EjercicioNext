@@ -1,6 +1,5 @@
 import Tarea from "@/components/Tarea";
 
-
 export async function getServerSideProps() {
   const res = await fetch("https://jsonplaceholder.typicode.com/todos");
   const tareas = await res.json();
