@@ -1,14 +1,19 @@
+import Link from "next/link";
 
-
-export default function Layout() {
+export default function Layout({ children }) {
     return (
-        <div className="navbar navbar-sticky">
-            <div className="navbar-start">
-                <a className="navbar-item">TODO List</a>
+        <>
+            <div className="navbar navbar-sticky">
+                <div className="navbar-start">
+                    <Link href="" className="navbar-item">TODO List</Link>
+                </div>
+                <div className="navbar-end">
+                    <Link href="" className="navbar-item">Crear Tarea </Link>
+                </div>
             </div>
-            <div className="navbar-end">
-                <a className="navbar-item">Crear Tarea</a>
-            </div>
-        </div>
+
+            {children}
+        </>
+
     );
 }
