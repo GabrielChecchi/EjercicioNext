@@ -11,7 +11,7 @@ export default function Create() {
     }
 
     function handleOnClick(e) {
-        POSTtarea(nombre, "", 1);
+        POSTtarea(nombre, "");
     }
 
     return (
