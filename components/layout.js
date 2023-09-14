@@ -5,10 +5,10 @@ export default function Layout({ children }) {
         <>
             <div className="navbar navbar-sticky">
                 <div className="navbar-start">
-                    <Link href="" className="navbar-item">TODO List</Link>
+                    <Link href="/" className="navbar-item">TODO List</Link>
                 </div>
                 <div className="navbar-end">
-                    <Link href="" className="navbar-item">Crear Tarea </Link>
+                    <Link href="/create" className="navbar-item">Crear Tarea </Link>
                 </div>
             </div>
 
